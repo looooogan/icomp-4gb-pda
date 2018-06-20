@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/OverallSituationLinerLayoutStyle"
+    tools:context="com.icomp.Iswtmv10.v01c01.c01s004.c01s004_003Activity">
+
+    <TextView android:text="@string/C01S004" style="@style/FunctionalTitleTextViewStyle"/>
+
+    <LinearLayout style="@style/MiddleLinerLayoutStyle">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" tools:ignore="Suspicious0dp">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/baseColor"
+                    android:textSize="@dimen/text_edittext"
+                    android:gravity="right|center"
+                    android:text="出库数量："/>
+
+            <TextView
+                    android:id="@+id/tv_01"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/baseColor"
+                    android:textSize="@dimen/text_edittext"
+                    android:gravity="right|center"
+                    android:text="输入刀身码数量："/>
+
+            <TextView
+                    android:id="@+id/tv_02"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"/>
+        </LinearLayout>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:layout_marginTop="10dp" tools:ignore="Suspicious0dp">
+            <LinearLayout
+                    android:layout_below="@id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/llContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+                android:id="@+id/tvScan"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:background="@drawable/border_c"
+                android:text="@string/toolBind"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/button_textsize"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/baseColor"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/BottomLinerLayoutStyle">
+        <Button android:id="@+id/btnReturn" android:text="@string/returnBy" style="@style/BottomButtonStyle"/>
+
+        <View style="@style/BottomLittlePartingLineStyle" />
+
+        <Button android:id="@+id/btnNext" android:text="@string/next" style="@style/BottomButtonStyle"/>
+    </LinearLayout>
+
+</LinearLayout>
